@@ -7,7 +7,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
    <header>
       <img
          alt="Vue logo"
-         class="logo"
+         class="logo rotate"
          src="@/assets/JSON_logo.svg"
          width="125"
          height="125"
@@ -47,6 +47,10 @@ header {
    margin: 0 auto 2rem;
 }
 
+h1 {
+   border-bottom: 1px solid var(--color-background-mute);
+}
+
 a,
 .green {
    text-decoration: none;
@@ -83,6 +87,19 @@ nav a {
 
 nav a:first-of-type {
    border: 0;
+}
+
+.rotate {
+   -webkit-animation: rotation 8s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+   from {
+      -webkit-transform: rotate(0deg);
+   }
+   to {
+      -webkit-transform: rotate(359deg);
+   }
 }
 
 @media (min-width: 1024px) {
