@@ -14,6 +14,14 @@
    </div>
 </template>
 
+<script>
+export default {
+   mounted() {
+      document.title = "JSON Paradox | About";
+   },
+};
+</script>
+
 <style>
 .title {
    border-bottom: 2px solid var(--color-background-mute);
